@@ -11,7 +11,7 @@ namespace Zoot
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new DeviceSelect());
         }
 
         protected override void OnStart()
