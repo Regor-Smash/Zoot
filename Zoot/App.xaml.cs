@@ -12,7 +12,10 @@ namespace Zoot
             InitializeComponent();
 
             MainPage = new NavigationPage(new DeviceSelect());
+            arHandler = DependencyService.Get<IARHandler>();
         }
+
+        public static IARHandler arHandler;
 
         protected override void OnStart()
         {

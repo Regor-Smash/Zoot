@@ -23,6 +23,9 @@ namespace Zoot
 
             currentDevice = device;
             LookingFor.Text += device.deviceName;
+
+            App.arHandler.OpenCamera();
+            App.arHandler.SetGeodevice(currentDevice);
         }
 
         private Geodevice currentDevice;
